@@ -126,10 +126,10 @@
         NUMBER {
             label = "NUMBER";
             bindings = <
- &kp DOWN     &kp AT  &kp N1    &kp N2  &kp N3      &to 5            &kp HOME  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN       &mo 3   &none
- &kp DOWN  &kp MINUS  &kp N4    &kp N5  &kp N6      &to 6             &kp END     &kp LEFT  &kp DOWN      &kp RIGHT     &kp DQT   &none
- &kp DOWN   &kp PLUS  &kp N7    &kp N8  &kp N9      &to 7          &kp INSERT      &kp F10   &kp F11        &kp F12  &kp DELETE   &none
-                              &kp DOWN   &to 0  &kp SPACE           &kp SPACE        &to 1  &kp DOWN
+ &kp DOWN   &none   &none     &none   &none      &to 5            &kp HOME  &kp PAGE_UP    &kp UP  &kp PAGE_DOWN       &mo 3     &none
+ &kp DOWN   &none   &none     &none   &none      &to 6             &kp END     &kp LEFT  &kp DOWN      &kp RIGHT     &kp DQT  &kp DOWN
+ &kp DOWN   &none   &none     &none   &none      &to 7          &kp INSERT      &kp F10   &kp F11        &kp F12  &kp DELETE  &kp DOWN
+                           &kp DOWN   &to 0  &kp SPACE           &kp SPACE        &to 1  &kp DOWN
             >;
         };
 
