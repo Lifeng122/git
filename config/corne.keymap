@@ -136,20 +136,20 @@
         SETTING {
             label = "SETTING";
             bindings = <
- &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF   &none  &rgb_ug RGB_TOG          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
- &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR   &none            &none            &bt BT_NXT  &out OUT_USB  &out OUT_BLE  &out OUT_TOG    &bt BT_PRV      &trans
-           &to 1            &to 2            &to 4            &to 5   &to 6            &to 7                &trans        &trans        &trans        &trans        &trans      &trans
-                                                             &trans  &trans            &to 0                &tog 3        &trans        &trans
+ &rgb_ug RGB_BRI  &rgb_ug RGB_SAI  &rgb_ug RGB_HUI  &rgb_ug RGB_EFF     &none  &rgb_ug RGB_TOG          &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bt BT_CLR
+ &rgb_ug RGB_BRD  &rgb_ug RGB_SAD  &rgb_ug RGB_HUD  &rgb_ug RGB_EFR     &none            &none            &bt BT_NXT  &out OUT_USB  &out OUT_BLE  &out OUT_TOG    &bt BT_PRV      &trans
+           &none            &none            &none            &none     &none            &none                &trans        &trans        &trans        &trans        &trans      &trans
+                                                           &kp DOWN  &kp DOWN        &kp SPACE             &kp SPACE      &kp DOWN      &kp DOWN
             >;
         };
 
         MARKDOWN {
             label = "MARKDOWN";
             bindings = <
- &trans  &RENWU  &GUANJIANCI  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans       &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
- &trans  &trans       &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans  &trans   &to 0          &trans  &trans  &trans
+   &kp ESC          &RENWU   &kp Q   &kp W         &kp E      &kp R              &none     &none    &kp UP     &trans     &none      &to 0
+   &kp TAB  &kp LEFT_SHIFT   &kp A   &kp S         &kp D      &kp F              &none  &kp LEFT  &kp DOWN  &kp RIGHT    &trans      &none
+ &kp LCTRL          &trans   &kp Z   &kp X         &kp C      &kp V              &none     &none     &none      &none  &kp DOWN  &kp ENTER
+                                     &none  &kp LEFT_ALT  &kp SPACE          &kp SPACE    &trans    &trans
             >;
         };
 
