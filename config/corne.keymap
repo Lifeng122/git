@@ -37,6 +37,16 @@
 
     combos {
         compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp ESC>;
+            key-positions = <12 13>;
+        };
+
+        esc {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+        };
     };
 
     macros {
