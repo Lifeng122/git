@@ -52,6 +52,11 @@
             bindings = <&test>;
             key-positions = <0 1 2>;
         };
+
+        tst {
+            bindings = <&ceshi>;
+            key-positions = <13 14>;
+        };
     };
 
     macros {
