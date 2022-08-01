@@ -37,9 +37,25 @@
 
     combos {
         compatible = "zmk,combos";
+
+        TAB {
+            bindings = <&kp TAB>;
+            key-positions = <0 1>;
+        };
+
+        ESC {
+            bindings = <&kp ESC>;
+            key-positions = <12 13>;
+        };
     };
 
     macros {
+        test: test {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp E &kp S &kp T>;
+        };
     };
 
     keymap {
@@ -65,7 +81,7 @@
             >;
         };
 
-        SCUT {
+        S-CUT {
             label = "S-CUT";
             bindings = <
  &trans      &to 4      &kp RS(HOME)    &kp LC(LS(UP))        &kp RS(END)   &to 5            &kp HOME  &kp PAGE_UP             &kp UP  &kp PAGE_DOWN           &mo 3  &trans
