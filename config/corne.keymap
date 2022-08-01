@@ -47,9 +47,20 @@
             bindings = <&kp TAB>;
             key-positions = <0 1>;
         };
+
+        test {
+            bindings = <&test>;
+            key-positions = <0 1 2>;
+        };
     };
 
     macros {
+        test: test {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp T &kp E &kp S &kp T>;
+        };
     };
 
     keymap {
