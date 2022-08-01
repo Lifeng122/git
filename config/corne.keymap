@@ -50,12 +50,6 @@
     };
 
     macros {
-        test: test {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp E &kp S &kp T>;
-        };
     };
 
     keymap {
