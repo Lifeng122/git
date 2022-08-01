@@ -99,7 +99,7 @@
             label = "MOUS";
             bindings = <
   &to 0   &none      &none      &none      &none      &to 0              &none   &none   &none   &none   &none   &none
-  &none   &none      &none      &none      &none      &none              &none  &JIETU   &none   &none   &none   &none
+  &none   &none      &none      &none      &none      &none              &none   &none   &none   &none   &none   &none
   &none   &none  &kp LC(X)  &kp LC(C)  &kp LC(V)      &none              &none   &none   &none   &none   &none   &none
                                 &none      &to 0  &kp ENTER          &kp ENTER   &to 0   &none
             >;
