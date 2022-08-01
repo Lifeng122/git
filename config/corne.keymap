@@ -36,68 +36,9 @@
 
     combos {
         compatible = "zmk,combos";
-
-        tab {
-            bindings = <&kp TAB>;
-            key-positions = <0 1>;
-            timeout-ms = <50>;
-        };
-
-        esc {
-            bindings = <&kp ESC>;
-            key-positions = <12 13>;
-            timeout-ms = <50>;
-        };
-
-        up {
-            bindings = <&kp UP>;
-            key-positions = <7 8>;
-            layers = <0 2>;
-            timeout-ms = <50>;
-        };
-
-        down {
-            bindings = <&kp DOWN>;
-            key-positions = <31 32>;
-            timeout-ms = <50>;
-        };
-
-        left {
-            bindings = <&kp LEFT>;
-            key-positions = <18 19>;
-            layers = <0 2>;
-            timeout-ms = <50>;
-        };
-
-        right {
-            bindings = <&kp RIGHT>;
-            key-positions = <20 21>;
-            layers = <0 2>;
-            timeout-ms = <50>;
-        };
     };
 
     macros {
-        JIETU: JIETU {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RCTRL &kp LEFT_ALT &kp A>;
-        };
-        RENWU: RENWU {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp PLUS &kp SPACE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp SPACE>;
-        };
-        GUANJIANCI: GUANJIANCI {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT &kp LBKT &kp RBKT &kp LEFT &kp LSHIFT>;
-        };
     };
 
     keymap {
