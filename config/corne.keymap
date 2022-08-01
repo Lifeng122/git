@@ -6,7 +6,7 @@
 
 #define BASE     0
 #define NFN      1
-#define S-CUT    2
+#define SCUT     2
 #define SETTING  3
 #define GAME     4
 #define MOUS     5
@@ -97,7 +97,7 @@
             >;
         };
 
-        S-CUT {
+        SCUT {
             label = "S-CUT";
             bindings = <
  &trans      &to 4      &kp RS(HOME)    &kp LC(LS(UP))        &kp RS(END)   &to 5            &kp HOME  &kp PAGE_UP             &kp UP  &kp PAGE_DOWN           &mo 3  &trans
