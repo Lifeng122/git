@@ -5,8 +5,8 @@
  */
 
 #define BASE     0
-#define N&FN     1
-#define S-CUT    2
+#define NFN      1
+#define SCUT     2
 #define SETTING  3
 #define GAME     4
 #define MOUS     5
