@@ -52,42 +52,22 @@
     };
 
     macros {
-        JIETU: JIETU {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp RCTRL &kp LEFT_ALT &kp A>;
-        };
-        RENWU: RENWU {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp PLUS &kp SPACE &kp LEFT_BRACKET &kp RIGHT_BRACKET &kp SPACE>;
-        };
-        GUANJIANCI: GUANJIANCI {
-            compatible = "zmk,behavior-macro";
-            label = "new_macro";
-            #binding-cells = <0>;
-            bindings = <&kp LSHIFT &kp LBKT &kp RBKT &kp LEFT &kp LSHIFT>;
-        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        DEFAULT {
+        BASE {
             label = "BASE";
             bindings = <
-    &kp TAB   &kp Q   &kp W         &kp E        &kp R      &kp T                &kp Y   &kp U      &kp I       &kp O     &kp P        &kp ESC
- &kp LSHIFT   &kp A   &kp S         &kp D        &kp F      &kp G                &kp H   &kp J      &kp K       &kp L  &kp SEMI  &kp BACKSPACE
-  &kp LCTRL   &kp Z   &kp X         &kp C        &kp V      &kp B                &kp N   &kp M  &kp COMMA  &kp PERIOD  &kp FSLH      &kp ENTER
-                             &kp LEFT_ALT  &lt 2 SPACE  &kp SPACE          &lt 8 SPACE   &mo 1   &kp LGUI
+    &kp TAB   &kp Q          &kp W         &kp E        &kp R      &kp T                  &kp Y   &kp U      &kp I       &kp O     &kp P        &kp ESC
+ &kp LSHIFT   &kp A  &kp -CUT    2         &kp D        &kp F      &kp G                  &kp H   &kp J      &kp K       &kp L  &kp SEMI  &kp BACKSPACE
+  &kp LCTRL   &kp Z          &kp X         &kp C        &kp V      &kp B          &kp &FN     1   &kp M  &kp COMMA  &kp PERIOD  &kp FSLH      &kp ENTER
+                                    &kp LEFT_ALT  &lt 2 SPACE  &kp SPACE            &lt 8 SPACE   &mo 1   &kp LGUI
             >;
         };
 
-        SYMBOT {
+        N_FN {
             label = "N&FN";
             bindings = <
  &kp CAPS   &none  &kp N7        &kp N8  &kp N9     &kp N0            &kp F10  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN  &kp TILDE
@@ -97,7 +77,7 @@
             >;
         };
 
-        NUMBER {
+        S-CUT {
             label = "S-CUT";
             bindings = <
  &trans      &to 4      &kp RS(HOME)    &kp LC(LS(UP))        &kp RS(END)   &to 5            &kp HOME  &kp PAGE_UP             &kp UP  &kp PAGE_DOWN           &mo 3  &trans
@@ -117,17 +97,17 @@
             >;
         };
 
-        MARKDOWN {
+        GAME {
             label = "GAME";
             bindings = <
-   &kp ESC           &none   &kp Q   &kp W         &kp E      &kp R              &none     &none    &kp UP      &none   &none      &to 0
-   &kp TAB  &kp LEFT_SHIFT   &kp A   &kp S         &kp D      &kp F              &none  &kp LEFT  &kp DOWN  &kp RIGHT   &none      &none
- &kp LCTRL           &none   &kp Z   &kp X         &kp C      &kp V              &none     &none     &none      &none  &trans  &kp ENTER
-                                     &none  &kp LEFT_ALT  &kp SPACE          &kp SPACE     &none     &none
+   &kp ESC           &none   &kp Q          &kp W         &kp E      &kp R              &none     &none    &kp UP      &none   &none      &to 0
+   &kp TAB  &kp LEFT_SHIFT   &kp A  &kp -CUT    2         &kp D      &kp F              &none  &kp LEFT  &kp DOWN  &kp RIGHT   &none      &none
+ &kp LCTRL           &none   &kp Z          &kp X         &kp C      &kp V              &none     &none     &none      &none  &trans  &kp ENTER
+                                            &none  &kp LEFT_ALT  &kp SPACE          &kp SPACE     &none     &none
             >;
         };
 
-        MEDIA {
+        MOUS {
             label = "MOUS";
             bindings = <
   &to 0   &none      &none      &none      &none      &to 0              &none   &none   &none   &none   &none   &none
@@ -137,7 +117,7 @@
             >;
         };
 
-        LOCK {
+        NUM {
             label = "NUM";
             bindings = <
    &kp TAB   &none  &kp HOME    &kp UP    &kp END      &kp K_CALC           &kp PLUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY        &kp ESC
@@ -147,7 +127,7 @@
             >;
         };
 
-        GAME {
+        MT {
             label = "MT";
             bindings = <
   &to 0  &trans  &trans  &trans  &trans            &trans                    &trans          &trans    &kp C_VOLUME_UP      &trans  &trans  &kp C_MUTE
