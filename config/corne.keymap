@@ -60,14 +60,14 @@
         BASE {
             label = "BASE";
             bindings = <
-    &kp TAB   &kp Q          &kp W         &kp E        &kp R      &kp T                  &kp Y   &kp U      &kp I       &kp O     &kp P        &kp ESC
- &kp LSHIFT   &kp A  &kp -CUT    2         &kp D        &kp F      &kp G                  &kp H   &kp J      &kp K       &kp L  &kp SEMI  &kp BACKSPACE
-  &kp LCTRL   &kp Z          &kp X         &kp C        &kp V      &kp B          &kp &FN     1   &kp M  &kp COMMA  &kp PERIOD  &kp FSLH      &kp ENTER
-                                    &kp LEFT_ALT  &lt 2 SPACE  &kp SPACE            &lt 8 SPACE   &mo 1   &kp LGUI
+    &kp TAB   &kp Q   &kp W      &kp E         &kp R        &kp T              &kp Y        &kp U   &kp I      &kp O       &kp P        &kp ESC
+ &kp LSHIFT   &kp A     &kp      &kp D         &kp F        &kp G              &kp H        &kp J   &kp K      &kp L    &kp SEMI  &kp BACKSPACE
+  &kp LCTRL   &kp Z   &kp X      &kp C         &kp V        &kp B                &kp        &FN 1   &kp M  &kp COMMA  &kp PERIOD       &kp FSLH
+                             &kp ENTER  &kp LEFT_ALT  &lt 2 SPACE          &kp SPACE  &lt 8 SPACE   &mo 1
             >;
         };
 
-        N_FN {
+        NFN {
             label = "N&FN";
             bindings = <
  &kp CAPS   &none  &kp N7        &kp N8  &kp N9     &kp N0            &kp F10  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN  &kp TILDE
@@ -77,7 +77,7 @@
             >;
         };
 
-        S-CUT {
+        SCUT {
             label = "S-CUT";
             bindings = <
  &trans      &to 4      &kp RS(HOME)    &kp LC(LS(UP))        &kp RS(END)   &to 5            &kp HOME  &kp PAGE_UP             &kp UP  &kp PAGE_DOWN           &mo 3  &trans
@@ -100,10 +100,10 @@
         GAME {
             label = "GAME";
             bindings = <
-   &kp ESC           &none   &kp Q          &kp W         &kp E      &kp R              &none     &none    &kp UP      &none   &none      &to 0
-   &kp TAB  &kp LEFT_SHIFT   &kp A  &kp -CUT    2         &kp D      &kp F              &none  &kp LEFT  &kp DOWN  &kp RIGHT   &none      &none
- &kp LCTRL           &none   &kp Z          &kp X         &kp C      &kp V              &none     &none     &none      &none  &trans  &kp ENTER
-                                            &none  &kp LEFT_ALT  &kp SPACE          &kp SPACE     &none     &none
+   &kp ESC           &none   &kp Q   &kp W         &kp E      &kp R              &none     &none    &kp UP      &none   &none      &to 0
+   &kp TAB  &kp LEFT_SHIFT   &kp A     &kp         &kp D      &kp F              &none  &kp LEFT  &kp DOWN  &kp RIGHT   &none      &none
+ &kp LCTRL           &none   &kp Z   &kp X         &kp C      &kp V              &none     &none     &none      &none  &trans  &kp ENTER
+                                     &none  &kp LEFT_ALT  &kp SPACE          &kp SPACE     &none     &none
             >;
         };
 
