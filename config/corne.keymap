@@ -68,7 +68,7 @@
         };
 
         NFN {
-            label = "N&FN";
+            label = "NFN";
             bindings = <
  &kp CAPS   &none  &kp N7        &kp N8  &kp N9     &kp N0            &kp F10  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN  &kp TILDE
    &trans   &none  &kp N4        &kp N5  &kp N6  &kp MINUS            &kp F11  &kp F4  &kp F5  &kp N6   &kp SCROLLLOCK     &trans
@@ -78,7 +78,7 @@
         };
 
         SCUT {
-            label = "S-CUT";
+            label = "SCUT";
             bindings = <
  &trans      &to 4      &kp RS(HOME)    &kp LC(LS(UP))        &kp RS(END)   &to 5            &kp HOME  &kp PAGE_UP             &kp UP  &kp PAGE_DOWN           &mo 3  &trans
  &trans  &kp RC(A)  &kp LC(LS(LEFT))  &kp LC(LS(DOWN))  &kp LC(LS(RIGHT))   &to 6             &kp END     &kp LEFT           &kp DOWN      &kp RIGHT  &kp APOSTROPHE  &trans
