@@ -72,12 +72,18 @@
             #binding-cells = <0>;
             bindings = <&kp LSHIFT &kp LBKT &kp RBKT &kp LEFT &kp LSHIFT>;
         };
+        test: test {
+            compatible = "zmk,behavior-macro";
+            label = "new_macro";
+            #binding-cells = <0>;
+            bindings = <&kp A &kp B &kp C>;
+        };
     };
 
     keymap {
         compatible = "zmk,keymap";
 
-        DEFAULT {
+        BASE {
             label = "BASE";
             bindings = <
     &kp TAB   &kp Q   &kp W         &kp E        &kp R      &kp T                &kp Y   &kp U      &kp I       &kp O     &kp P        &kp ESC
@@ -87,7 +93,7 @@
             >;
         };
 
-        SYMBOT {
+        N_FN {
             label = "N&FN";
             bindings = <
  &kp CAPS   &none  &kp N7        &kp N8  &kp N9     &kp N0            &kp F10  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN  &kp TILDE
@@ -97,7 +103,7 @@
             >;
         };
 
-        NUMBER {
+        S-CUT {
             label = "S-CUT";
             bindings = <
  &trans      &to 4      &kp RS(HOME)    &kp LC(LS(UP))        &kp RS(END)   &to 5            &kp HOME  &kp PAGE_UP             &kp UP  &kp PAGE_DOWN           &mo 3  &trans
@@ -117,7 +123,7 @@
             >;
         };
 
-        MARKDOWN {
+        GAME {
             label = "GAME";
             bindings = <
    &kp ESC           &none   &kp Q   &kp W         &kp E      &kp R              &none     &none    &kp UP      &none   &none      &to 0
@@ -127,7 +133,7 @@
             >;
         };
 
-        MEDIA {
+        MOUS {
             label = "MOUS";
             bindings = <
   &to 0   &none      &none      &none      &none      &to 0              &none   &none   &none   &none   &none   &none
@@ -137,7 +143,7 @@
             >;
         };
 
-        LOCK {
+        NUM {
             label = "NUM";
             bindings = <
    &kp TAB   &none  &kp HOME    &kp UP    &kp END      &kp K_CALC           &kp PLUS  &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MULTIPLY        &kp ESC
@@ -147,7 +153,7 @@
             >;
         };
 
-        GAME {
+        MT {
             label = "MT";
             bindings = <
   &to 0  &trans  &trans  &trans  &trans            &trans                    &trans          &trans    &kp C_VOLUME_UP      &trans  &trans  &kp C_MUTE
